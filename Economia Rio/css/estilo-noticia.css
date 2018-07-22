@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+body {
+	background-color: white;
+	color: rgba(0,0,0,1);
+}
+
+p{
+	text-align: justify;
+	
+}
+	
+
+
+.div-noticia {
+	background-color: #F6AB00;	
+	height: 90px;
+}
+
+.div-noticia h1 {
+	color: white;
+	text-align: center;
+	
+}
+
+
+/*bloco da noticia principal */
+
+.thumbnail#noticia-pricipal {
+	width: 650px;
+	height: 550px;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 5%;
+	margin-right:0%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid red;
+	
+}
+
+ .ft-capa {
+	width: 100%;
+	height: auto;
+	max-width: 650px;
+	max-height: 400px;
+	opacity: 0.8;
+	
+
+}
+
+.capa {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: white;
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+
+.capa .thumbnail p {
+	margin: 0;
+	color:#5D5E5D;
+	text-align:center;
+	padding-left: 20px;
+	float: center;
+	font-size: 20px;
+}
+
+.capa .thumbnail h4#materia-principal {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color:#2226D9;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 30px;
+}
+
+
+
+/* blocos de noticia abaixo */
+
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -35px;
+	margin-bottom: 0px;
+	margin-left: 4%;
+}
+.thumbnail#economia-bar {
+	width: 23%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid blue;
+}
+
+.thumbnail#esportes-bar {
+	width: 23%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid yellowgreen;
+}
+
+.thumbnail {
+	width: 23%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid orange;
+}
+.gallery .thumbnail h4#economia {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: blue;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.gallery .thumbnail h4#esportes {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: greenyellow;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.gallery .thumbnail h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: orange;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.gallery .thumbnail p {
+	margin: 0;
+	color: #B3B3B3;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+	opacity: 0.8;
+}
+
+.gallery .thumbnail .tag {
+	color: #5D5E5D;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}

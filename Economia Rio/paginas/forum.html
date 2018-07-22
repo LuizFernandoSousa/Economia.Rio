@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Forum</title>
+  
+</head>
+<body class="container-fluid">
+
+  <div class="p-a-clipe row "></div>  
+    <header class="row top-page">
+      <div class="col-lg-2"></div>
+      <div class="logotipo col-lg-1">
+        <a href="#">
+          <h3 class="text-center">Economia</h3>
+          <p class="text-center">Rio</p>
+        </a>  
+      </div>  
+      <div class="col-lg-3 slogan ">
+        <h3>Em Defesa das Empresas Fluminenses</h3>         
+      </div>
+      <div class="col-lg-1 slogan "></div>
+      <div class="col-lg-4 patrocinadores-text"> 
+        <h3>AREA DOS PATROCINADORES</h3>
+      </div>    
+    </header>
+
+    <div class="row menu">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-3">
+        <input type="checkbox" id="check">
+        <label id="icone" for="check"><img src="../img/icone.png"></label>
+        <div class="barra">
+          <nav>
+           <a href="index.html"><div class="link2 text-center">Home</div></a>
+            <a href="noticias.html"><div class="link2 text-center">Noticias</div></a>
+            <a href="forum.html"><div class="link2 text-center">Forum</div></a>
+            <a href=""><div class="link2 text-center">Contato</div></a>
+          </nav>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+      <div class="col-lg-3 redes sociais">
+        
+      </div>
+      <div class="pesquisa col-lg-2">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+<main>  
+  <section class="comentarios">
+      <h2 class="comentarios-titulo">Comentários</h2>
+      <input class="comentarios-input" 
+        v-model="novoComentario"
+        placeholder='Digite seu comentário'
+        v-on:keyup.enter="comentar">
+      <button class="comentarios-button" v-on:click="comentar">Enviar</button>
+      <ul>
+        <li class='comentario' v-for='usuario in usuarios'>
+          <img class='comentario-avatar' src='./assets/profile.png'/>
+          <div class='comentario-container'>
+            <h3 class='comentario-titulo'>{{usuario.nome}}</h3>
+            <p class='comentario-texto'>{{usuario.mensagem}}</p>
+          </div>
+        </li>
+      </ul>
+  </section>
+</main>
+</body>
+<footer>
+</footer>
+  <link rel="stylesheet" type="text/css" href="../css/estilo-noticia.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</html>

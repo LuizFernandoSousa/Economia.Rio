@@ -1,0 +1,126 @@
+.p-a-clipe{
+	background: linear-gradient(#ffffff,#d9d9d9 );
+	height: 25px;
+}
+.logotipo{
+	height: 124px;	
+	background: #F6AB00;
+	margin-top: -15px;
+}
+.logotipo h3{
+	margin-top: 30px;
+	margin-bottom: -50px;
+	font-size: 20px;
+}
+
+.logotipo p{
+	padding-top: 20px;
+	margin-bottom: 0px;
+	height: 90px;
+	font-size: 70px;
+}
+.logotipo a{
+	text-decoration: none;
+	color: white;
+}
+.slogan h3{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 25px;
+	color: #000000;
+}
+.patrocinadores-text h3{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 25px;
+	color: #000000;
+	
+}
+/*Toda a parte do menu*/
+.menu{
+	background-color: green;
+	height: 50px;
+}
+#check{
+	display: none;
+}
+#icone{
+	cursor: pointer;
+	padding: 10px;
+	margin-left: -10px;
+	position: absolute;
+	z-index: 1;
+}
+.barra{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	transition: all .2s linear;
+}
+
+nav{
+	width: 100%;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+.link2{
+	background-color: #F6AB00;
+	padding:20px;
+	font-family: 'Arial';
+	font-size: 12pt;
+	transition: all .2s linear;
+	color: #f4f4f9;
+	border-bottom: 2px solid #222;
+	opacity: 0;
+	
+}
+
+.link2:hover{
+	background-color: #e6a100;	
+}
+
+#check:checked ~ .barra{
+	transform: translateY(0px);
+}
+
+#check:checked ~ .barra nav a .link2{
+	opacity: 1;
+	margin-top: 0;
+	transition-delay: .2s;
+}
+
+/* Pesquisa*/
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
